@@ -41,7 +41,7 @@ case $COMMAND in
     ;;
 esac
 
-exec $base_dir/kafka-run-class.sh $EXTRA_ARGS kafka.Kafka "$@"
+exec $base_dir/kafka-run-class.sh $EXTRA_ARGS kafka.Kafka "$@" &
 
 # Launch AutoScale Client
 java -cp libs/sigar.jar:autoscale/classes com.autoscale.client.AutoScaleClient
