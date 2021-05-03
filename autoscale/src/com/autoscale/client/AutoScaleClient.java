@@ -16,7 +16,7 @@ import org.hyperic.sigar.Mem;
 import org.hyperic.sigar.SigarException;
 
 public class AutoScaleClient extends TimerTask {
-    static final long FREQUENCY = 60;
+    static final long FREQUENCY = 120;
     static final int PORT = 1234;
     static final String IPADDRESS = "71.69.151.14";
     File disk;
